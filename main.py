@@ -10,7 +10,7 @@ import os
 
 recongnizer = sr.Recognizer()
 engine = pyttsx3.init()
-newsapi ="77d17805783343e3a647572ae3fa0290"
+newsapi ="Removed"
 def speak_old(text):
     engine.say(text)
     engine.runAndWait()
@@ -34,7 +34,7 @@ def speak(text):
     pygame.mixer.music.unload()
     os.remove("temp.mp3")
 def AiProcess(command):
-    genai.configure(api_key="AIzaSyAx75B1ohkguToQ31n5jFGCaxom1QjAMjw")
+    genai.configure(api_key="Removed due to GitHUB & google policies")
     model = genai.GenerativeModel("gemini-1.5-flash")
     response = model.generate_content(f"{command} Respond with a shorter answer")
     speak(response.text)
